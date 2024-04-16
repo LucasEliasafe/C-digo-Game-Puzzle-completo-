@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Puzzle Game</h1> 
+        <h2>Moves the number and arrange them in order</h2> 
+            <div class="game-container"> 
+        <label for="puzzle-size"> <h2>Choose Puzzle Size:</h2></label> 
+    <select id="puzzle-size" onchange="changePuzzleSize()"> <option value="3">3x3</option> <option value="4">4x4</option> <option value="5">5x5</option> <option value="6">6x6</option> <option value="7">7x7</option> 
+    <!-- Add more options as needed --> </select> 
+    <div class="puzzle-container" id="puzzle-container"></div> 
+        <p id="win-message" class="message"></p> 
+        <p id="timer" class="timer">Time: 0 seconds</p>
+    <button id="start-music-button">Start Music</button> 
+    <button id="replay-button" class="replay-button" onclick="initializePuzzle()">Replay</button> 
+        <label for="theme-select"><h3><b>Select Theme</b></h3></label> 
+    <select id="theme-select" onchange="changeTheme()"> <option value="select the theme">Select the Theme</option> <option value="white-theme">White</option> <option value="black-theme">Black</option> <option value="brown-theme">Brown</option> <option value="wood-theme">Wood</option> <option value="light-theme">Light</option> </select> 
+    </div> 
+
+        <audio id="background-music" loop> 
+            <source src="audio/zamona-net-nueki-tolchonov-so-tired.mp3" type="audio/mpeg"> 
+        <audio id="winning-sound"> 
+            <source src="success-1-6297 (1).mp3" type="audio/mpeg"> 
+    </audio>
+
+
+
+    
+    
+
+    <script src="main.js"></script>
+</html>
